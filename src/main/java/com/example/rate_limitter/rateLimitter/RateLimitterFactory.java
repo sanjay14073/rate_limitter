@@ -10,9 +10,9 @@ public class RateLimitterFactory {
             case FIXED_WINDOW:
                 return new FixedWindowRateLimitter(memoryModel, param1, param2);
             case TOKEN_BUCKET:
-                return new TokenBucketRateLimitter(memoryModel, param1, param2); // Example parameters
+                return new TokenBucketRateLimitter(memoryModel, param1, param2); 
             case LEAKY_BUCKET:
-                return new LeakyBucketRateLimitter(memoryModel, param1, param2); // Example parameters
+                return new LeakyBucketRateLimitter(memoryModel, param1, param2); 
             default:
                 throw new IllegalArgumentException("Invalid Rate Limiter Type");
         }
